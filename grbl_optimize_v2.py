@@ -67,7 +67,7 @@ for filename in filenames:
                 'x': x_coords,
                 'y': y_coords
                 })
-        N_clusters = 6
+        N_clusters = 25
         kmeans = KMeans(n_clusters=N_clusters)
         kmeans.fit(df)
         labels = kmeans.predict(df)
