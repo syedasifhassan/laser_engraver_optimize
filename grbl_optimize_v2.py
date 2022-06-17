@@ -8,6 +8,7 @@ from sklearn.cluster import KMeans
 
 mypath = "./working/"
 resultpath = "./processed/"
+N_clusters = 25
 
 (_, _, filenames) = next(os.walk(mypath))
 print(filenames)
@@ -67,7 +68,6 @@ for filename in filenames:
                 'x': x_coords,
                 'y': y_coords
                 })
-        N_clusters = 25
         kmeans = KMeans(n_clusters=N_clusters)
         kmeans.fit(df)
         labels = kmeans.predict(df)
