@@ -1,5 +1,5 @@
 # laser_engraver_optimize
-Cluster path segments of an image together for better results when laser engraving with GRBL.
+Cluster path segments of an image together for better results when laser engraving with LaserGRBL.
 
 # Context
 When engraving images onto wood with a laser engraver, first the image must be sliced into paths for the laser to follow.  I found that sometimes the stripes were visible in the finished result, but not when the laser had recently traveled nearby.
